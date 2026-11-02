@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pascolli Citrus — Suco Puro e Fresco do Dia</title>
+  
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- AOS (Animate on Scroll) & Style -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Header / Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-citrus"></i>
+        </div>
+        <span class="brand-name">Pascolli<span>Citrus</span></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#hero">Início</a>
+        <a href="#produtos">Sucos</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#sobre">Nossa História</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-trigger" id="openCartBtn">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <a href="#produtos" class="btn-primary">Pedir Agora</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section (3D Tilt & Floating Objects) -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+    </div>
+
+    <div class="container hero-grid">
+      <div class="hero-content" data-aos="fade-right">
+        <div class="badge"><i class="fa-solid fa-sparkles"></i> 100% Natural & Espremido no Dia</div>
+        <h1>Sabor Puro. <br><span class="text-gradient">Energia Real.</span></h1>
+        <p>Sucos artesanais sem conservantes, sem açúcar adicionado e sem corantes. Produzidos diariamente em Americana - SP diretamente para a sua mesa.</p>
+        
+        <div class="hero-cta">
+          <a href="#produtos" class="btn-primary btn-lg">
+            <span>Ver Cardápio</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="https://wa.me/5519993923752" target="_blank" class="btn-secondary btn-lg">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp Direct
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <strong>100%</strong>
+            <span>Fruta Selecionada</span>
+          </div>
+          <div class="stat-item">
+            <strong>0%</strong>
+            <span>Aditivos Química</span>
+          </div>
+          <div class="stat-item">
+            <strong>Diário</strong>
+            <span>Preparo Fresco</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-aos="zoom-in" data-aos-delay="200">
+        <div class="tilt-card-wrapper" id="tiltCard">
+          <div class="card-3d">
+            <div class="fruit-float f-orange" data-speed="2"><i class="fa-solid fa-lemon"></i></div>
+            <div class="fruit-float f-strawberry" data-speed="-2"><i class="fa-solid fa-apple-whole"></i></div>
+            <div class="glass-splash">
+              <img src="https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=800&q=80" alt="Suco de Laranja Pascolli Citrus" class="hero-img">
+            </div>
+            <div class="floating-badge badge-1">
+              <i class="fa-solid fa-bolt"></i>
+              <div>
+                <small>Frescor Garantido</small>
+                <strong>Espremido Hoje</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products" id="produtos">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="sub-title">Cardápio Exclusivo</span>
+        <h2>Nossos Sabores Especiais</h2>
+        <p>Escolha o sabor perfeito e adicione ao seu carrinho de forma prática.</p>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Differentials Section -->
+  <section class="differentials" id="diferenciais">
+    <div class="container">
+      <div class="diff-grid">
+        <div class="diff-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="diff-icon"><i class="fa-solid fa-leaf"></i></div>
+          <h3>100% Natural</h3>
+          <p>Nenhuma adição de água, açúcar ou conservantes. Apenas a pureza máxima da fruta selecionada.</p>
+        </div>
+
+        <div class="diff-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="diff-icon"><i class="fa-solid fa-bottle-water"></i></div>
+          <h3>Embalagens Práticas</h3>
+          <p>Disponível em 500ml para consumo rápido, 2L para a família e galões de 5L para eventos.</p>
+        </div>
+
+        <div class="diff-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="diff-icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <h3>Entregas e Retirada</h3>
+          <p>Entrega rápida em Americana e região para garantir que você receba seu suco trincando de gelado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="sobre">
+    <div class="container about-grid">
+      <div class="about-img" data-aos="fade-right">
+        <img src="https://images.unsplash.com/photo-1622597467836-f3285f2131b8?auto=format&fit=crop&w=800&q=80" alt="Nossa história Pascolli Citrus">
+      </div>
+      <div class="about-content" data-aos="fade-left">
+        <span class="sub-title">Nossa Origem</span>
+        <h2>Pascolli Citrus — Do pomar direto para o seu copo</h2>
+        <p>Nascemos na cidade de Americana-SP com o propósito de redefinir a experiência de beber suco cítrico. Nosso processo artesanal garante o máximo de nutrição, vitamina C e sabor original.</p>
+        <ul class="about-list">
+          <li><i class="fa-solid fa-circle-check"></i> Controle rigoroso de qualidade das frutas</li>
+          <li><i class="fa-solid fa-circle-check"></i> Higienização e envase com padrões industriais</li>
+          <li><i class="fa-solid fa-circle-check"></i> Atendimento personalizado via WhatsApp</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Location -->
+  <section class="contact" id="contato">
+    <div class="container">
+      <div class="contact-card" data-aos="zoom-in">
+        <div class="contact-info">
+          <h2>Venha nos visitar ou faça seu pedido!</h2>
+          <p><i class="fa-solid fa-location-dot"></i> Rua Capiberibe, Vila Dainese, Americana – SP</p>
+          <p><i class="fa-brands fa-whatsapp"></i> (19) 99392-3752</p>
+          <p><i class="fa-brands fa-instagram"></i> @pascolli_citrus</p>
+        </div>
+        <div class="contact-action">
+          <a href="https://wa.me/5519993923752" target="_blank" class="btn-primary btn-lg">
+            <i class="fa-brands fa-whatsapp"></i> Falar Conosco
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Cart Modal -->
+  <div class="cart-modal-overlay" id="cartModal">
+    <div class="cart-modal">
+      <div class="cart-header">
+        <h3><i class="fa-solid fa-basket-shopping"></i> Seu Carrinho</h3>
+        <button class="close-modal" id="closeCartBtn">&times;</button>
+      </div>
+
+      <div class="cart-items" id="cartItemsContainer">
+        <!-- Rendered by JS -->
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <strong id="cartTotalValue">R$ 0,00</strong>
+        </div>
+        <button class="btn-primary btn-block" id="checkoutBtn">
+          <i class="fa-brands fa-whatsapp"></i> Finalizar Pedido no WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 Pascolli Citrus. Todos os direitos reservados. Americana - SP.</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/pascolli_citrus/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/5519993923752" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
